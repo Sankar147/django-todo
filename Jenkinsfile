@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = "django-todo"
         IMAGE_TAG = "v1.0"
-        RUN_IP = "13.201.72.245"
+        
     }
 
     stages {
