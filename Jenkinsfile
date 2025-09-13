@@ -34,7 +34,7 @@ pipeline {
                     sh "docker rm ${IMAGE_NAME} || true"
 
                     // Run the container on port 8080 -> 80
-                    sh "docker run -d --name ${IMAGE_NAME} -p 8080:80 ${IMAGE_NAME}:${IMAGE_TAG}"
+                    sh "docker run -d --name ${IMAGE_NAME} -p 8000:80 ${IMAGE_NAME}:${IMAGE_TAG}"
                 }
             }
         }
