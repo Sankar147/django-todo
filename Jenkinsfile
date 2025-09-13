@@ -5,18 +5,18 @@ pipeline {
     // Environment variables
     environment {
         // The name of your Docker image
-        IMAGE_NAME = "my-app"
+        IMAGE_NAME = "Django-todo"
         // The version tag for your image
         IMAGE_TAG = "v1.0"
         // The IP address where you want to run the container (e.g., your Jenkins agent's IP)
-        RUN_IP = "127.0.0.1"
+        RUN_IP = "13.201.72.245"
     }
  
     stages {
         stage('Checkout Code') {
             steps {
                 // Clones your repository
-                git url: 'https://github.com/your-username/your-repo.git', branch: 'main'
+                git url: 'https://github.com/Sankar147/django-todo.git', branch: 'main'
             }
         }
  
