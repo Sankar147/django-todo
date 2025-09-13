@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     // Navigate to the directory containing your Dockerfile
-                    sh 'cd src/'
+                    sh 'cd app/'
                     // Build the Docker image
                     sh "docker build -t ${IMAGE_NAME}:${IMAGE_TAG} ."
                 }
